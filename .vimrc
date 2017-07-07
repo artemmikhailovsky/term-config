@@ -1,10 +1,14 @@
 execute pathogen#infect() 
 
+syntax on
+
 set noerrorbells
 set vb t_vb=
 
+let g:gruvbox_contrast_dark='hard'
 set background=dark
 colorscheme gruvbox
+
 hi vertsplit ctermfg=238 ctermbg=235
 hi LineNr ctermfg=237
 hi StatusLine ctermfg=235 ctermbg=245
@@ -22,4 +26,3 @@ hi EndOfBuffer ctermfg=237 ctermbg=235
 set statusline=%=&P\ %f\ %m
 set fillchars=vert:\ ,stl:\ ,stlnc:\ 
 set laststatus=2
-syntax on
